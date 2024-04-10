@@ -6,21 +6,41 @@
     box-sizing: border-box;
 }
 body{
+    margin: 0 auto;
+    max-width: 1200px;
     font-family: 'roboto', sans-serif;
     background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,193,245,1) 0%);
+}
 
-
-
-.Contenedor-nav > img{
+.Contenido-items > img{
     width:200px;
     height: 200px;
   
   display: flex;
 }
-.contenido-header >img{
+.container-logotipo >img{
+    width: 250px;
+    height: 250px;
+    margin-left: 10px;
+}
+.contenido-items >img{
     width: 200px;
     height: 200px;
     margin-left: 30px;
     border: 2px solid #f574ca;
+}
+.icon-cart{
+    width: 40px;
+    height: 40px;
+
+}
+img{
+    max-width: 100%;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0 ;
 }
