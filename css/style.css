@@ -16,6 +16,7 @@ body{
     height: 200px;
     width: 200px;
     
+    
 }
 .logo > h1{
     font-size: 25px;
@@ -48,17 +49,17 @@ body{
     width: 40px;
     height: 40px;
 }
-img{
+.contenedor>img{
     /* max-width: 100%;  */
     /* padding: 8px;  */
     /* border: 2px solid #f574ca; */
     /* height: auto;  */
     width: 200px; 
-  height: auto;
-  margin: 5px; 
-  border: 3px solid transparent; 
-  transition: border 0.5s ease;
-  border-color: #ed6693;
+    height: auto;
+    margin: 5px; 
+    border: 3px solid transparent; 
+    transition: border 0.5s ease;
+    border-color: #ed6693;
 }
 
 .contenido-items{
