@@ -43,14 +43,12 @@
 
     <section id="contenico-items" class="contenido-items">
         <h2>Encuentra una gran de variedad de productos para resaltar tu belleza </h2>
-        
-    <div class="contenedor">           
-    <img src="../Pagina-Web/Imagenes/Base Aqua.jpg" alt="Base Aqua" 
-    onclick="openLightbox('../Pagina-Web/Imagenes/Base Aqua.jpg', 'Base Aqua de cobertura media Esta base es ideal para todo tipo de piel: seca, mixta o grasa, y está diseñada para brindar un aspecto natural.')"  >
-    <div class="lightbox" id="lightbox">
+        <div class="contenedor">
+        <img src="./Imagenes/Base Aqua.jpg" alt="Base Aqua" 
+        onclick="openLightbox('./Imagenes/Base Aqua.jpg', 'Base Aqua de cobertura media Esta base es ideal para todo tipo de piel: seca, mixta o grasa, y está diseñada para brindar un aspecto natural.')"  >
+        <div class="lightbox" id="lightbox">
         <span class="close-btn" onclick="closeLightbox()">&times;</span>
         <div class="lightbox-content">
-            
             <img class="lightbox-img" id="lightbox-img" src="" alt="">
             <div class="lightbox-text">
             <p class="lightbox-caption" id="lightbox-caption"></p>
@@ -82,198 +80,1195 @@
     <p class="precio">$35.000</p>
     <button>Añadir al carrito</button>
     
-</div>
+        </div>
  
         <div class="contenedor">
-            <img src="../Pagina-Web/Imagenes/Base Nude.jpg" alt="Base Nude">
+            <img src="./Imagenes/Base Nude.jpg" alt="Base Nude"
+             onclick="openLightbox('./Imagenes/Base Nude.jpg', 'Base Nude de cobertura alta. Esta base es la indicada para piel mixta o grasa, con un acabado de porcelana. ')" >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption">$30.000</p>
+                    
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
             <h2>Base Nude</h2>
         <p class="precio">$30.000</p>
         <button>Añadir al carrito</button>
         </div>
+
         <div class="contenedor">
-             <img src="../Pagina-Web/Imagenes/Base Stay Matte.jpg" alt="Base Stay">
+             <img src="./Imagenes/Base Stay Matte.jpg" alt="Base Stay" 
+             onclick="openLightbox('./Imagenes/Base Stay Matte.jpg', 'Base Stay para un acabdo mas matte en tu piel ')" >
+             <div class="lightbox" id="lightbox">
+                 <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                 <div class="lightbox-content">
+                     
+                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                     <div class="lightbox-text">
+                     <p class="lightbox-caption" id="lightbox-caption"></p>
+                     <p>$25.000</p>
+                     <button>agregar al carrito</button>
+                     <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+             <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                 <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                 <input type="text" placeholder="Nombre">
+                 <input type="text" placeholder="Email">
+                 <input type="text"placeholder="Dirección">
+                 
+                     <label for="cantidad">Cantidad:</label>
+                     <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                     
+                     <label for="metodo-pago">Método de pago:</label>
+                     <select id="metodo-pago" name="metodo-pago">
+                         <option value="tarjeta">Tarjeta de crédito</option>
+                         <option value="transferencia">Transferencia bancaria</option>
+                         <option value="paypal">PayPal</option>
+                     </select><br><br>
+                
+                 <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+             </div>
+                 </div>
+                 </div>
+             </div>
              <h2>Base Stay</h2>
              <p class="precio">$25.000</p>
              <button>Añadir al carrito</button>
         </div>
+
         <div class="contenedor">
-            <img src="../Pagina-Web/Imagenes/Bronzer.jpg" alt="Bronzer en barra cremoso">
+            <img src="./Imagenes/Bronzer.jpg" alt="Bronzer en barra cremoso"
+             onclick="openLightbox('./Imagenes/Bronzer.jpg', 'Bronzer en barra cremoso con un acabado natural')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$18.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Bronzer en barra</h2>
              <p class="precio">$18.000</p>
              <button>Añadir al carrito</button>
         </div>
+
         <div class="contenedor">
-            <img src="../Pagina-Web/Imagenes/Bronzer en polvo.jpg" alt="Bronzer en polvo">
+            <img src="./Imagenes/Bronzer en polvo.jpg" alt="Bronzer en polvo" 
+            onclick="openLightbox('./Imagenes/Bronzer en polvo.jpg', 'Bronzer en polvo en un empaque pequeño ideal para  llevar a todas partes')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$12.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Bronzer en Polvo</h2>
              <p class="precio">$12.000</p>
              <button>Añadir al carrito</button>
         </div>
+
         <div class="contenedor">
-            <img src="../Pagina-Web/Imagenes/Bronzer matte.jpg" alt="Bronzer matte">
+            <img src="./Imagenes/Bronzer matte.jpg" alt="Bronzer matte" 
+            onclick="openLightbox('/Imagenes/Bronzer matte.jpg', 'Bronzer ideal si quieres obtener un acabado mas matte, es indicado para pieles mixtas o grasas')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>135.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Bronzer matte</h2>
              <p class="precio">$15.000</p>
              <button>Añadir al carrito</button>
         </div>
     
         <div class="contenedor">
-            <img src="../Pagina-Web/Imagenes/Contorno en barra.jpg" alt="Contorno en barra">
+            <img src="./Imagenes/Contorno en barra.jpg" alt="Contorno en barra" 
+            onclick="openLightbox('./Imagenes/Contorno en barra.jpg', 'Contono en barra, suave y con un excelente acabado perfectos para pieles grasas ')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$10.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Contorno en barra</h2>
              <p class="precio">$10.000</p>
              <button>Añadir al carrito</button>
         </div>
+
         <div class="contenedor">
-            <img src="../Pagina-Web/Imagenes/Paleta de contorno.jpg" alt="Paleta de contorno one step">
+            <img src="./Imagenes/Paleta de contorno.jpg" alt="Paleta de contorno one step" 
+            onclick="openLightbox('./Imagenes/Paleta de contorno.jpg', 'Paleta de Contorno One Step, que incluye cuato tonos diferentes para que obtengas el tipo de acabado que mejor te favorezca')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$20.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Paleta de contorno</h2>
-             <p class="precio">$22.000</p>
+             <p class="precio">$20.000</p>
              <button>Añadir al carrito</button>
         </div>
+
         <div class="contenedor">
-            <img src="../Pagina-Web/Imagenes/Contorno floral.jpg" alt="Kit de resaltado y contorno Floral ">
+            <img src="./Imagenes/Contorno floral.jpg" alt="Kit de resaltado y contorno Floral "
+              onclick="openLightbox('./Imagenes/Contorno floral.jpg', 'Kit de resaltado y contorno floral, que incluye 6 tonos.')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$25.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Kit de resaltado</h2>
-             <p class="precio">$28.000</p>
+             <p class="precio">$25.000</p>
              <button>Añadir al carrito</button>
         </div>
         <div class="contenedor">
-            <img src="Imagenes/Iluminador siren.jpg" alt="Iluminador siren glow">
+            <img src="./Imagenes/Iluminador siren.jpg" alt="Iluminador siren glow" 
+            onclick="openLightbox('./Imagenes/Iluminador siren.jpg', 'Iluminador Siren Glow, con espejo en un tono perfecto para todo tipo de piel.')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$8.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Iluminador </h2>
              <p class="precio">$8.000</p>
              <button>Añadir al carrito</button>
         </div>
     
         <div class="contenedor">
-            <img src="Imagenes/Polvos compactos.jpg" alt="Polvos compactos">
+            <img src="Imagenes/Polvos compactos.jpg" alt="Polvos compactos" 
+            onclick="openLightbox('Imagenes/Polvos compactos.jpg', 'Polvos compactos perfectos para una buena cobertura')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$18.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Polvos Compactos</h2>
-             <p class="precio">$20.000</p>
+             <p class="precio">$18.000</p>
              <button>Añadir al carrito</button>
         </div>
         <div class="contenedor">
-            <img src="Imagenes/Polvo suelto.jpg" alt="Polvos sueltos">
+            <img src="Imagenes/Polvo suelto.jpg" alt="Polvos sueltos"
+             onclick="openLightbox('Imagenes/Polvo suelto.jpg', 'Polvos Sueltos BANANA perfecto para sellar tu maquillaje con un acabado espectacular.')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$20.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Polvos Sueltos</h2>
              <p class="precio">$20.000</p>
              <button>Añadir al carrito</button>
         </div>
         <div class="contenedor">
-            <img src="Imagenes/Rubor liquido.jpg" alt="Rubor Blush Sponge">
+            <img src="Imagenes/Rubor liquido.jpg" alt="Rubor Blush Sponge" 
+            onclick="openLightbox('Imagenes/Rubor liquido.jpg', 'Rubor Blush Sponje, Es perfecto para darle vida a tu maquillaje con un tono y acabdo super lindo.')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$20.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2> Blush</h2>
              <p class="precio">$20.000</p>
              <button>Añadir al carrito</button>
         </div>
         <div class="contenedor">
-            <img src="Imagenes/Paleta de rubor.jpg" alt="Paleta de rubores">
+            <img src="Imagenes/Paleta de rubor.jpg" alt="Paleta de rubores" 
+            onclick="openLightbox('Imagenes/Paleta de rubor.jpg', 'Paleta de rubores que incluye seis tonos diferentes todos con un excelnte acabo  perfectos para piel mixta o grasa.')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$20.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Paleta Rubores</h2>
-             <p class="precio">$25.000</p>
+             <p class="precio">$20.000</p>
              <button>Añadir al carrito</button>
         </div>
         <div class="contenedor">
-            <img src="Imagenes/Fijador.jpg" alt="Fijador de maquillaje">
+            <img src="Imagenes/Fijador.jpg" alt="Fijador de maquillaje" 
+            onclick="openLightbox('Imagenes/Fijador.jpg', 'Fijador de maquillaje con una larga duracion haciendorte ver radienate todo el dia')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$15.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Fijador</h2>
-             <p class="precio">$25.000</p>
+             <p class="precio">$15.000</p>
              <button>Añadir al carrito</button>
         </div>
         <div class="contenedor">
-            <img src="Imagenes/Primer.jpg" alt="Primer Aqua">
+            <img src="Imagenes/Primer.jpg" alt="Primer Aqua" 
+            onclick="openLightbox('Imagenes/Primer.jpg', 'Primer Aqua perfecto para empezar tu rutina de maquillaje y obtener un mejor acabado.')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$29.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Primer Aqua</h2>
-             <p class="precio">$35.000</p>
+             <p class="precio">$28.000</p>
              <button>Añadir al carrito</button>
         </div>
         <div class="contenedor">
-            <img src="Imagenes/Delineador en gel.jpg" alt="Delineador de ojos en gel">
+            <img src="Imagenes/Delineador en gel.jpg" alt="Delineador de ojos en gel" 
+            onclick="openLightbox('Imagenes/Delineador en gel.jpg', 'Delineador de ojos en gel negro de larga duracion')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$15.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Delineador en Gel</h2>
              <p class="precio">$15.000</p>
              <button>Añadir al carrito</button>
         </div>
         <div class="contenedor">
-            <img src="Imagenes/Delineador en plumon.jpg" alt="Delineador en plumon cafe">
+            <img src="Imagenes/Delineador en plumon.jpg" alt="Delineador en plumon cafe" 
+            onclick="openLightbox('Imagenes/Delineador en plumon.jpg', 'Delienador de plumon cafe para una facil aplicación y hermoso acabado')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$8.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Delineador en plumon</h2>
              <p class="precio">$8.000</p>
              <button>Añadir al carrito</button>
         </div>
         <div class="contenedor">
-            <img src="Imagenes/Delineador liquido.jpg" alt="Delineador liquido ">
+            <img src="Imagenes/Delineador liquido.jpg" alt="Delineador liquido " 
+            onclick="openLightbox('Imagenes/Delineador liquido.jpg', 'Delineador liquido negro para obtener un delineado mas fino')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$12.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Delineador liquido</h2>
              <p class="precio">$12.000</p>
              <button>Añadir al carrito</button>
         </div>
         <div class="contenedor">
-            <img src="Imagenes/Fijador de cejas.jpg" alt="Fijador de cejas">
+            <img src="Imagenes/Fijador de cejas.jpg" alt="Fijador de cejas" 
+            onclick="openLightbox('Imagenes/Fijador de cejas.jpg', 'Fijador de Cejas en gel transparente para lucir radiante y hermosa.')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$10.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Fijador de cejas</h2>
-             <p class="precio">$5.000</p>
+             <p class="precio">$10.000</p>
              <button>Añadir al carrito</button>
         </div>
         <div class="contenedor">
-            <img src="Imagenes/Paleta de cejas.jpg" alt="Paleta para cejas en varios tonos">
+            <img src="Imagenes/Paleta de cejas.jpg" alt="Paleta para cejas en varios tonos" 
+            onclick="openLightbox('Imagenes/Paleta de cejas.jpg', 'Paleta para cejas que contiene ocho tonos cafes claros y oscuros')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$18.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Paleta para cejas</h2>
              <p class="precio">$18.000</p>
              <button>Añadir al carrito</button>
         </div>
         <div class="contenedor">
-            <img src="Imagenes/Pomada de cejas.jpg" alt="Pomada para cejas">
+            <img src="Imagenes/Pomada de cejas.jpg" alt="Pomada para cejas" 
+            onclick="openLightbox('Imagenes/Pomada de cejas.jpg', 'Pomada para cejas Brow  con un excelente acabado y colorimetria.')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$12.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Pomada para cejas</h2>
-             <p class="precio">$15.000</p>
+             <p class="precio">$12.000</p>
              <button>Añadir al carrito</button>
         </div>
         <div class="contenedor">
-            <img src="Imagenes/Paleta de sombras.jpg" alt="Paleta de sombras con 88 sombras">
+            <img src="Imagenes/Paleta de sombras.jpg" alt="Paleta de sombras con 88 colores"
+             onclick="openLightbox('Imagenes/Paleta de sombras.jpg', 'Paleta de sombras que tiene 88 colores diferentes con excelnte cabado y espectacular colorimetria, con colores fuertes y claros.')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$40.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Sombras</h2>
              <p class="precio">$40.000</p>
              <button>Añadir al carrito</button>
         </div>
         <div class="contenedor">
-            <img src="Imagenes/Paleta de sombras mixta.jpg" alt="Paleta de sombras con 12 tonos, 6 mates y 6 satinados">
+            <img src="Imagenes/Paleta de sombras mixta.jpg" alt="Paleta de sombras con 12 tonos, 6 mates y 6 satinados" 
+            onclick="openLightbox('Imagenes/Paleta de sombras mixta.jpg', 'Paleta de sombras con 12 tonos, 6 colores mates y 6 satinados.')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$20.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Sombras</h2>
              <p class="precio">$20.000</p>
              <button>Añadir al carrito</button>
         </div>
         <div class="contenedor">
-            <img src="Imagenes/Encrespador.jpg" alt="Encrespador para pestañas">
+            <img src="Imagenes/Encrespador.jpg" alt="Encrespador para pestañas"
+             onclick="openLightbox('Imagenes/Encrespador.jpg', 'Encrespador para pestañas, en color rosa y dorado.')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$10.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Encrespador</h2>
-             <p class="precio">$8.000</p>
+             <p class="precio">$10.000</p>
              <button>Añadir al carrito</button>
         </div>
         <div class="contenedor">
-            <img src="Imagenes/Pestañina vogue.jpg" alt="Pestañina vogue amor a primera vista">
+            <img src="Imagenes/Pestañina vogue.jpg" alt="Pestañina vogue amor a primera vista" 
+            onclick="openLightbox('Imagenes/Pestañina vogue.jpg', 'Pestañina vogue amor a primera vista de  larga aduración, para obtener unas pestañas mas largas y rizadas')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$17.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Pestañina vogue</h2>
              <p class="precio">$17.000</p>
              <button>Añadir al carrito</button>
         </div>
         <div class="contenedor">
-            <img src="Imagenes/Pestañina Lash Sensational.jpeg" alt="Pestañina Lash Sensational a prueba de agua ">
+            <img src="Imagenes/Pestañina Lash Sensational.jpeg" alt="Pestañina Lash Sensational a prueba de agua " 
+            onclick="openLightbox('Imagenes/Pestañina Lash Sensational.jpeg', 'Pestañina Lash Sensational a prueba de agua de larga duración.')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$15.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Pestañina Lash</h2>
              <p class="precio">$15.000</p>
              <button>Añadir al carrito</button>
         </div>
         <div class="contenedor">
-            <img src="Imagenes/Lapiz labial.jpg" alt="Lapiz labial delineador">
+            <img src="Imagenes/Lapiz labial.jpg" alt="Lapiz labial delineador" 
+            onclick="openLightbox('Imagenes/Lapiz labial.jpg', ' Lapiz labial delineador perfecto para obtener un resultado mas definido en labios.')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$10.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Labial delineador</h2>
              <p class="precio">$10.000</p>
              <button>Añadir al carrito</button>
         </div>
         <div class="contenedor">
-            <img src="Imagenes/Brillo Voluminizador.jpg" alt="Brillo para labios para dar mas volumen">
+            <img src="Imagenes/Brillo Voluminizador.jpg" alt="Brillo para labios para dar mas volumen" 
+            onclick="openLightbox('Imagenes/Brillo Voluminizador.jpg', 'Brillo para labios para dar mas volumen en hermosos colores .')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$12.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Brillo para labios</h2>
              <p class="precio">$12.000</p>
              <button>Añadir al carrito</button>
         </div>
         <div class="contenedor">
-            <img src="Imagenes/Lip gloss.jpg" alt="Gloss con color">
+            <img src="Imagenes/Lip gloss.jpg" alt="Gloss con color" 
+            onclick="openLightbox('Imagenes/Lip gloss.jpg', 'Lip Gloss con color perfecto para llevar a todas partes')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$10.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Gloss</h2>
              <p class="precio">$10.000</p>
              <button>Añadir al carrito</button>
         </div>
         <div class="contenedor">
-            <img src="Imagenes/Tinta para labios.jpg" alt="Tintas para labios">
+            <img src="Imagenes/Tinta para labios.jpg" alt="Tintas para labios"
+             onclick="openLightbox('Imagenes/Tinta para labios.jpg', 'Tintas para labios e larga duración y con una exclente colorimetria para dar un acabado más natural.')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$5.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Tinta para labios</h2>
              <p class="precio">$5.000</p>
              <button>Añadir al carrito</button>
         </div>
         <div class="contenedor">
-            <img src="Imagenes/Brochas.jpg" alt="Kit de 10 brochas y aplicadores ">
+            <img src="Imagenes/Brochas.jpg" alt="Kit de 10 brochas y aplicadores "
+             onclick="openLightbox('Imagenes/Brochas.jpg', 'Kit de 10 brochas y aplicadores para rostro, ojos, labios y cejas')"  >
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    
+                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                    <div class="lightbox-text">
+                    <p class="lightbox-caption" id="lightbox-caption"></p>
+                    <p>$20.000</p>
+                    <button>agregar al carrito</button>
+                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <input type="text"placeholder="Dirección">
+                
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                    
+                    <label for="metodo-pago">Método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+            </div>
+                </div>
+                </div>
+            </div>
              <h2>Kit Brochas</h2>
              <p class="precio">$20.000</p>
              <button>Añadir al carrito</button>
         </div>
  
-    
+    </section>
 </div>
 
 </body>

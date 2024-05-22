@@ -26,6 +26,7 @@ function showForm() {
 
 function submitForm() {
     // Aquí puedes agregar la lógica para enviar el formulario
-    alert("Formulario enviado!"); // Ejemplo de alerta
+    alert("Compra Exitosa!"); // Ejemplo de alerta
 }
+
 
