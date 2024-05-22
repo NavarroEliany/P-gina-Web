@@ -6,6 +6,7 @@
     <title>Make-up </title>
     <link rel="stylesheet" href="../Pagina-Web/css/style.css">
     <link rel="icon" href="Imagenes/Logo icono.png">
+    <script src="../Pagina-Web/js/funciones-js.js"></script>
 </head>
 <body>
 
@@ -42,13 +43,47 @@
 
     <section id="contenico-items" class="contenido-items">
         <h2>Encuentra una gran de variedad de productos para resaltar tu belleza </h2>
-    <div class="contenedor">
+        
+    <div class="contenedor">           
+    <img src="../Pagina-Web/Imagenes/Base Aqua.jpg" alt="Base Aqua" 
+    onclick="openLightbox('../Pagina-Web/Imagenes/Base Aqua.jpg', 'Base Aqua de cobertura media Esta base es ideal para todo tipo de piel: seca, mixta o grasa, y está diseñada para brindar un aspecto natural.')"  >
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
             
-    <img src="../Pagina-Web/Imagenes/Base Aqua.jpg" alt="Base Aqua" >
-    <h2>Base Aqua</h2>
-        <p class="precio">$35.000</p>
-        <button>Añadir al carrito</button>
+            <img class="lightbox-img" id="lightbox-img" src="" alt="">
+            <div class="lightbox-text">
+            <p class="lightbox-caption" id="lightbox-caption"></p>
+            <p>$35.000</p>
+            <button>agregar al carrito</button>
+            <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
+    <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
+        <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
+        <input type="text" placeholder="Nombre">
+        <input type="text" placeholder="Email">
+        <input type="text"placeholder="Dirección">
+        
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+            
+            <label for="metodo-pago">Método de pago:</label>
+            <select id="metodo-pago" name="metodo-pago">
+                <option value="tarjeta">Tarjeta de crédito</option>
+                <option value="transferencia">Transferencia bancaria</option>
+                <option value="paypal">PayPal</option>
+            </select><br><br>
+       
+        <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
+    </div>
         </div>
+        </div>
+    </div>
+    <h2>Base Aqua</h2>
+    <p class="precio">$35.000</p>
+    <button>Añadir al carrito</button>
+    
+</div>
+ 
         <div class="contenedor">
             <img src="../Pagina-Web/Imagenes/Base Nude.jpg" alt="Base Nude">
             <h2>Base Nude</h2>
