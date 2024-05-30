@@ -10,7 +10,7 @@ body{
     max-width: 1800px;
     font-family: 'roboto', sans-serif;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,193,245,1) 0%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, #ffc1f5 0%);
 }
 .logo > img {
     height: 200px;
@@ -21,6 +21,20 @@ body{
 .logo > h1{
     font-size: 25px;
     text-decoration: double;
+    margin-left: 10px;
+}
+.menu .option a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+ 
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu .option a:hover {
+    color: #e100ff;
+    
 }
 .option{
     margin-bottom: 30px;
@@ -32,13 +46,8 @@ body{
     text-decoration: none;
     color: black;
    
-  
 }
-.option > a:hover{
-    text-decoration: underline;
-    color: rgb(255, 0, 183);
-    
-}
+
 .contenedor >img{
     width: 200px;
     height: 200px;
@@ -60,6 +69,7 @@ body{
     border: 3px solid transparent; 
     transition: border 0.5s ease;
     border-color: #ed6693;
+   
 }
 
 .contenido-items{
@@ -67,11 +77,17 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+       
+    
 }
 .contenedor{
    
     text-align: center;
     margin: 20px;
+    
 }
 .Contenedor > img{
     width:50px;
@@ -100,17 +116,14 @@ body{
 .contenedor img {
     max-width: 100%;
     height: auto;
-    cursor: pointer; /* Cambiar cursor a mano al pasar sobre la imagen */
+    cursor: pointer; 
 }
 
-
-
-
 .lightbox-caption {
-    color: #333; /* Color del texto */
-    font-size: 16px; /* Tamaño de fuente */
-    line-height: 1.5; /* Altura de línea */
-    margin-top: 10px; /* Espacio superior */
+    color: #333;
+    font-size: 16px; 
+    line-height: 1.5;
+    margin-top: 10px; 
     
 }
 
@@ -120,7 +133,7 @@ body{
     top: 10px;
     right: 10px;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 40px;
     color: #fc5fdc;
 }
 
@@ -128,48 +141,48 @@ body{
 
 /* Estilos para el lightbox */
 .lightbox {
-    display: none; /* Inicialmente oculto */
+    display: none; 
     position: fixed;
     z-index: 9999;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    text-align: center; /* Centrar el contenido */
+    text-align: center; 
 }
 
 .lightbox-content {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centrar vertical y horizontalmente */
-    background-color: #fd90dc; /* Fondo blanco */
-    padding: 100px; /* Espacio interno */
-    display: flex; /* Alinear elementos en un flexbox */
-    align-items: center; /* Alinear verticalmente */
+    transform: translate(-50%, -50%);
+    background-color: #fd90dc;
+    padding: 100px; 
+    display: flex;
+    align-items: center; 
 }
 
 .lightbox-img {
-    max-width: 50%; /* Ancho de la imagen */
+    max-width: 50%; 
     
 }
 
 .lightbox-text {
-    flex-grow: 1; /* El texto ocupa todo el espacio disponible */
-    padding-left: 20px; /* Espacio entre la imagen y el texto */
+    flex-grow: 1; 
+    padding-left: 20px; 
 }
 
 .lightbox-caption {
-    color: #000000; /* Color del texto */
-    font-size: 16px; /* Tamaño de fuente */
-    line-height: 1.5; /* Altura de línea */
-    margin: 0; /* Eliminar márgenes */
+    color: #000000;
+    font-size: 16px; 
+    line-height: 1.5;
+    margin: 0; 
     
 }
 .lightbox-img {
-    max-width: 200px; /* Ajusta el ancho máximo de la imagen según sea necesario */
-    max-height: 200px; /* Ajusta la altura máxima de la imagen según sea necesario */
-    float: left; /* Alinea la imagen a la izquierda */
+    max-width: 200px; 
+    max-height: 200px;
+    float: left; 
     margin-right: 20px;
 }
 .lightbox-text>button{
@@ -182,3 +195,93 @@ body{
     color: #ffffff;
     border-color: #d42a87 ;
 }
+
+
+
+footer {
+    background:  #ffc1f5;
+    padding: 20px 0;
+    padding-top: 30px;
+    overflow: hidden; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.partFooter {
+    width: 22%;
+    text-align: center;
+}
+
+
+
+.partFooter h4 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    background-color: #cd0090;
+    padding: 5px;
+    border: 1px solid #cd0090;
+    border-radius: 5px;
+}
+
+.contact {
+    margin: 10px;
+    display: block;
+    text-align: left;
+}
+
+.contact > i {
+    float: left;
+    margin: 0 0 0 10px;
+    color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    line-height: 28px;
+    text-align: center;
+    align-items: center;
+}
+
+.contact > p {
+    margin-left: 50px;
+    align-items: center;
+    line-height: 28px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.partFooter > a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.social-media > a > i {
+    font-size: 20px;
+    display: inline-block; 
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 50%; 
+    width: 38px; 
+    height: 38px; 
+    line-height: 36px; 
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out .3s;
+    margin-right: 5px;
+}
+
+.social-media > a > i:hover {
+    color: #000000;
+    background-color: #cd0090;
+    border-color: #cd0090;
+}
+

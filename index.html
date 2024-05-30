@@ -33,16 +33,16 @@
                     </svg> 
                 </a>
                 <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+                    <svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
                 </a>
             </menu>
-           
+            <h2>Encuentra una gran de variedad de productos para resaltar tu belleza </h2>
         </div>
        
    </section>
 
     <section id="contenico-items" class="contenido-items">
-        <h2>Encuentra una gran de variedad de productos para resaltar tu belleza </h2>
+       
         <div class="contenedor">
         <img src="./Imagenes/Base Aqua.jpg" alt="Base Aqua" 
         onclick="openLightbox('./Imagenes/Base Aqua.jpg', 'Base Aqua de cobertura media Esta base es ideal para todo tipo de piel: seca, mixta o grasa, y está diseñada para brindar un aspecto natural.')"  >
@@ -52,27 +52,25 @@
             <img class="lightbox-img" id="lightbox-img" src="" alt="">
             <div class="lightbox-text">
             <p class="lightbox-caption" id="lightbox-caption"></p>
-            <p>$35.000</p>
             <button>agregar al carrito</button>
-            <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-    <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-        <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-        <input type="text" placeholder="Nombre">
-        <input type="text" placeholder="Email">
-        <input type="text"placeholder="Dirección">
-        
-            <label for="cantidad">Cantidad:</label>
-            <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-            
-            <label for="metodo-pago">Método de pago:</label>
-            <select id="metodo-pago" name="metodo-pago">
-                <option value="tarjeta">Tarjeta de crédito</option>
-                <option value="transferencia">Transferencia bancaria</option>
-                <option value="paypal">PayPal</option>
-            </select><br><br>
-       
-        <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-    </div>
+            <button onclick="showForm()">Comprar</button> 
+            <div id="formulario" style="display: none;">
+                <input type="text" id="nombre" placeholder="Nombre">
+                <input type="text" id="email" placeholder="Email">
+                <input type="text" id="direccion" placeholder="Dirección">
+                
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                
+                <label for="metodo-pago">Método de pago:</label>
+                <select id="metodo-pago" name="metodo-pago">
+                    <option value="tarjeta">Tarjeta de crédito</option>
+                    <option value="transferencia">Transferencia bancaria</option>
+                    <option value="paypal">PayPal</option>
+                </select><br><br>
+               
+                <button onclick="submitForm()">Enviar</button> 
+            </div>
         </div>
         </div>
     </div>
@@ -93,25 +91,23 @@
                     <p class="lightbox-caption" id="lightbox-caption">$30.000</p>
                     
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -130,27 +126,25 @@
                      <img class="lightbox-img" id="lightbox-img" src="" alt="">
                      <div class="lightbox-text">
                      <p class="lightbox-caption" id="lightbox-caption"></p>
-                     <p>$25.000</p>
                      <button>agregar al carrito</button>
-                     <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-             <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                 <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                 <input type="text" placeholder="Nombre">
-                 <input type="text" placeholder="Email">
-                 <input type="text"placeholder="Dirección">
-                 
-                     <label for="cantidad">Cantidad:</label>
-                     <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                     
-                     <label for="metodo-pago">Método de pago:</label>
-                     <select id="metodo-pago" name="metodo-pago">
-                         <option value="tarjeta">Tarjeta de crédito</option>
-                         <option value="transferencia">Transferencia bancaria</option>
-                         <option value="paypal">PayPal</option>
-                     </select><br><br>
-                
-                 <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-             </div>
+                     <button onclick="showForm()">Comprar</button> 
+                     <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                  </div>
                  </div>
              </div>
@@ -171,25 +165,24 @@
                     <p class="lightbox-caption" id="lightbox-caption"></p>
                     <p>$18.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -208,27 +201,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$12.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -247,27 +238,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>135.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -286,27 +275,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$10.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -325,27 +312,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$20.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -364,27 +349,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$25.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -402,27 +385,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$8.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -441,27 +422,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$18.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -479,27 +458,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$20.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button>
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -517,27 +494,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$20.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -555,27 +530,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$20.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -593,27 +566,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$15.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -631,27 +602,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$29.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -669,27 +638,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$15.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -707,28 +674,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$8.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
-                </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>        </div>
                 </div>
             </div>
              <h2>Delineador en plumon</h2>
@@ -745,27 +709,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$12.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button>
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -783,65 +745,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$10.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
-                </div>
-                </div>
-            </div>
-             <h2>Fijador de cejas</h2>
-             <p class="precio">$10.000</p>
-             <button>Añadir al carrito</button>
-        </div>
-        <div class="contenedor">
-            <img src="Imagenes/Paleta de cejas.jpg" alt="Paleta para cejas en varios tonos" 
-            onclick="openLightbox('Imagenes/Paleta de cejas.jpg', 'Paleta para cejas que contiene ocho tonos cafes claros y oscuros')"  >
-            <div class="lightbox" id="lightbox">
-                <span class="close-btn" onclick="closeLightbox()">&times;</span>
-                <div class="lightbox-content">
-                    
-                    <img class="lightbox-img" id="lightbox-img" src="" alt="">
-                    <div class="lightbox-text">
-                    <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$18.000</p>
-                    <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -859,27 +781,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$12.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -897,27 +817,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$40.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -935,27 +853,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$20.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button>
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -973,27 +889,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$10.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -1011,27 +925,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$17.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -1049,27 +961,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$15.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -1087,27 +997,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$10.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -1125,27 +1033,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$12.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -1163,27 +1069,25 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$10.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -1200,28 +1104,25 @@
                     
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
-                    <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$5.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
                 </div>
                 </div>
             </div>
@@ -1239,28 +1140,26 @@
                     <img class="lightbox-img" id="lightbox-img" src="" alt="">
                     <div class="lightbox-text">
                     <p class="lightbox-caption" id="lightbox-caption"></p>
-                    <p>$20.000</p>
                     <button>agregar al carrito</button>
-                    <button onclick="showForm()">Comprar</button> <!-- Agregar evento onclick -->
-            <div id="formulario" style="display: none;"> <!-- Formulario oculto -->
-                <!-- Aquí puedes agregar los campos del formulario para los datos de compra -->
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="text"placeholder="Dirección">
-                
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
-                    
-                    <label for="metodo-pago">Método de pago:</label>
-                    <select id="metodo-pago" name="metodo-pago">
-                        <option value="tarjeta">Tarjeta de crédito</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="paypal">PayPal</option>
-                    </select><br><br>
-               
-                <button onclick="submitForm()">Enviar</button> <!-- Botón para enviar el formulario -->
-            </div>
-                </div>
+                    <button onclick="showForm()">Comprar</button> 
+                    <div id="formulario" style="display: none;">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="direccion" placeholder="Dirección">
+                        
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1"><br><br>
+                        
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                        </select><br><br>
+                       
+                        <button onclick="submitForm()">Enviar</button> 
+                    </div>
+                 </div>
                 </div>
             </div>
              <h2>Kit Brochas</h2>
@@ -1269,7 +1168,37 @@
         </div>
  
     </section>
-</div>
 
+     <!-- Contactos -->
+   <footer>
+   
+    <div class="partFooter">
+        <h4>Contacto</h4>
+        <div class="contact">
+            <i class="fa-solid fa-phone"></i>
+            <p>(+57) 313 230 7459</p>
+        </div>
+        <div class="contact">
+            <i class="fa-solid fa-envelope"></i>
+            <p>Make-up@gmail.com</p>
+        </div>
+        <div class="contact">
+            <i class="fa-solid fa-user"></i>
+            <p>Make-up Store</p>
+        </div>
+       
+    </div>
+    <div class="partFooter">
+        <h4>Redes Sociales</h4>
+        <div class="social-media">            
+            <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/iniciarsesion?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/sweetalert2@11.js"></script>
 </body>
 </html>
